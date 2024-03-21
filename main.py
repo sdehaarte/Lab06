@@ -6,6 +6,11 @@ def encode(message):
         encoded_message += chr(ord(char) + 3)
     return encoded_message
 
+def decode(encoded_message):
+    decoded_message = ""
+    for char in encoded_message:
+        decoded_message += chr(ord(char) - 3)
+    return decoded_message
 
 def main():
     while True:
